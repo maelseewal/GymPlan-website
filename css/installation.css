@@ -5,7 +5,7 @@ body {
   width: 100vw;
   margin: 0;
   color: #ffffff;
-  background-color: rgb(24, 24, 24);
+  background-color: #1b1b1b;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,7 +41,7 @@ main {
   background-color: rgb(48, 48, 55);
   background-image: url(../img/backgroundimg-2.jpeg);
   background-size: cover;
-  margin-bottom: 20px;
+  padding-top: 10px;
 }
 h1 {
   margin: 0;
@@ -59,7 +59,7 @@ h2 {
   margin-top: 40px;
 }
 p {
-  color: #dbdbdb;
+  color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   align-self: flex-start;
@@ -113,21 +113,38 @@ footer {
   font-size: 12px;
   height: 15vh;
   background-color: #1b1b1b;
+}
+
+footer p {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 700;
+  margin: 0;
+  margin-top: 40px;
 }
-/* Responsive Styles */
 @media (max-width: 768px) {
   h1 {
     font-size: 60px;
+    text-align: center;
+  }
+  .logo {
+    height: 50px;
+    width: 50px;
   }
   h2 {
     font-size: 18px;
   }
   .textblock {
     width: 80vw;
+  }
+  .block {
+    width: 90vw;
+  }
+  img {
+    margin-right: 20px;
+    margin-left: 0px;
+    height: 30vh;
   }
   p {
     margin-left: 20px;
@@ -136,6 +153,11 @@ footer {
   button {
     width: 120px;
     height: 35px;
+  }
+  footer p {
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -149,12 +171,24 @@ footer {
   .textblock {
     width: 90vw;
   }
-  p {
-    margin-left: 10px;
+  .block {
+    width: 90vw;
+  }
+  img {
     margin-right: 10px;
+    margin-left: 0px;
+    height: 30vh;
+  }
+  p {
+    margin-left: 20px;
   }
   button {
     width: 100px;
     height: 30px;
+  }
+  footer p {
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
