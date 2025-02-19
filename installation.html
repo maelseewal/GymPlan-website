@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/installation.css">
+</head>
+
+<body>
+  <header>
+    <h1>Android Installation</h1>
+  </header>
+  <main>
+    <div class="textblock">
+      <h2>Schritt 1</h2>
+      <p>Lade das Apk File auf dein Android Handy.</p>
+      <button id="apkdownload">Download</button>
+      <h2>Schritt 2</h2>
+      <p>Gehe auf deinem Android Handy in die App meine Dateien und dann in den Dowloads Ordner.</p>
+      <h2>Schritt 3</h2>
+      <p>Wähle das Dokument aus und klicke auf die drei Punkte und wähle öffnen mit.</p>
+      <h2>Schritt 4</h2>
+      <p>Wähle Packetinstalation.</p>
+      <h2>Jetzt wird sich die App Instalieren!</h2>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("apkdownload").addEventListener("click", function () {
+      let link = document.createElement("a");
+      link.href = "./files/app-arm64-v8a-release.apk";
+      link.download = "GymPlan.apk";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  </script>
+</body>
+
+</html>
