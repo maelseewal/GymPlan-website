@@ -39,9 +39,11 @@ main {
   justify-content: center;
   width: 100vw;
   background-color: rgb(48, 48, 55);
-  background-image: url(../img/backgroundimg-2.jpeg);
+  background-image: url(../img/backgroundimg.jpeg);
   background-size: cover;
   padding-top: 10px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 h1 {
   margin: 0;
